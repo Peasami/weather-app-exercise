@@ -35,6 +35,9 @@ export default function Position() {
         <View>
             <Text style={styles.coords}>{latitude.toFixed(2)}, {longitude.toFixed(3)}</Text>
             <Text style={styles.message}>{message}</Text>
+            {isLoading === false &&
+                <Weather latitude={latitude} longitude={longitude} />
+            }
         </View>
     )
 }

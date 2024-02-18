@@ -6,7 +6,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.container}>
-        {/* <Text style={styles.heading}>Current weather</Text> */}
         <Position />
       </Text>
     </View>
